@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Media Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gallery-specific styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img, 
+        .gallery .video-container {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover,
+        .gallery .video-container:hover {
+            transform: scale(1.03);
+        }
+        .video-container {
+            position: relative;
+            background: #000;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .media-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Media Gallery</h1>
+        <a href="index.html" class="gallery-link">← Back to Home</a>
+    </header>
+
+    <div class="gallery">
+        <!-- Images -->
+        <img src="images/berts beads.jpg" alt="Bert's Beads">
+        <img src="images/Blue and Orange Modern Business gBook.png" alt="Business Book">
+        <img src="images/bw.png" alt="Black and White Design">
+        <img src="images/CODE MASTERY 2.png" alt="Code Mastery">
+        <img src="images/dark logo.png" alt="Dark Logo">
+        <img src="images/e&tlf2.png" alt="E & TLF Design">
+        <img src="images/EDIT GENIUS G.png" alt="Edit Genius">
+        <img src="images/EDIT GENIUS.png" alt="Edit Genius Version 2">
+        <img src="images/Jen'sbakery2.png" alt="Jen's Bakery">
+        <img src="images/Jen'sbakery3.png" alt="Jen's Bakery Variation">
+        <img src="images/Jen'sbakery4.png" alt="Jen's Bakery Alternative">
+        <img src="images/nkitchen.jpg" alt="Modern Kitchen">
+        <img src="images/OBSCURED ORIGINS.png" alt="Obscured Origins">
+        <img src="images/OLIVER AZIATOR.png" alt="Oliver Aziator">
+        <img src="images/photo-1578353022142-09264fd64295.avif" alt="Professional Photo">
+        <img src="images/recreationbay.jpg" alt="Recreation Bay">
+        <img src="images/S.C. STUDIOS.png" alt="SC Studios">
+        <img src="images/ShopCraze Presents.png" alt="ShopCraze">
+        <img src="images/vvd cover.png" alt="VVD Cover">
+        <img src="images/white logo.png" alt="White Logo">
+
+        <!--Videos -->
+        <div class="video-container">
+            <video controls>
+                <source src="videos/car sale finale 2.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Car Sale Finale</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/obs.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">OBS Recording</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/church 2.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Church Event</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/church.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Church Service</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/evil ways.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Evil Ways</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/i know.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">I Know</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/jcoolereldos.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">JCoolereldos</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/jerry.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Jerry</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/Lamarr's new album, Vivid Days, is out now! 💤.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Lamarr's Album</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/messi hd ad.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Messi HD Ad</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/my oba.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">My Oba</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/positive affirmation 2.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Positive Affirmation</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/positive affirmation.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Positive Affirmation 2</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/refix me 2.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Refix Me</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/salary increase.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Salary Increase</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/short car.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Short Car</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/snippet of evil ways.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Evil Ways Snippet</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/stephcurryyyyyyyyyy.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">Steph Curry</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/WhatsApp Video 2023-07-27 at 7.09.25 AM.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">WhatsApp Video 1</div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/WhatsApp Video 2023-07-27 at 7.09.54 AM.mp4" type="video/mp4">
+            </video>
+            <div class="media-label">WhatsApp Video 2</div>
+        </div>
+    </div>
+</body>
+</html>
